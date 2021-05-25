@@ -19,10 +19,12 @@ namespace Hello_world_c
 
             string myName = "Brandon";
 
+            string lowerCaseName = myName.ToLower();
+
 
             Console.WriteLine("The sum of " + num1 + " and " + num2 + " is equal to " + sum);
             Console.WriteLine("The sum of " + d1 + " and " + d2 + " is equal to " + sumDouble);
-            Console.WriteLine(myName);
+            Console.WriteLine("My name is " + lowerCaseName);
 
         }
     }
