@@ -19,7 +19,11 @@ namespace Hello_world_c
 
             string myName = "Brandon";
 
-            string lowerCaseName = myName.ToLower();
+            string lowerCaseName = myName.ToUpper();
+
+            string boom = "BOOOOOOOOM";
+
+            string lower = boom.ToLower();
 
 
             Console.WriteLine("The sum of " + num1 + " and " + num2 + " is equal to " + sum);
