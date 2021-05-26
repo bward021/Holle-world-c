@@ -26,9 +26,46 @@ namespace Hello_world_c
             string lower = boom.ToLower();
 
 
-            Console.WriteLine("The sum of " + num1 + " and " + num2 + " is equal to " + sum);
-            Console.WriteLine("The sum of " + d1 + " and " + d2 + " is equal to " + sumDouble);
-            Console.WriteLine("My name is " + lowerCaseName);
+            //Console.WriteLine("The sum of " + num1 + " and " + num2 + " is equal to " + sum);
+            //Console.WriteLine("The sum of " + d1 + " and " + d2 + " is equal to " + sumDouble);
+            //Console.WriteLine("My name is " + lowerCaseName);
+
+            // ********* Casting ********** 
+
+            //Implicit Conversion
+
+            int num = 123321123;
+
+            long bigNum = num;
+
+            double myDouble = 13.37;
+            int myInt;
+
+            // casting double into int
+            // explicit conversion
+            myInt = (int)myDouble;
+
+            string myString = myDouble.ToString();
+
+            //Console.WriteLine(myInt);
+
+            // ************* Parsing ***********
+
+            string parsingstring1 = "15";
+            string parsingString2 = "13";
+
+            int parseSum = Int32.Parse(parsingstring1) + Int32.Parse(parsingString2);
+
+            //Console.WriteLine(parseSum);
+
+            // ****** Code Challenge 1 *********
+
+            string yourName;
+
+            Console.Write("Please Enter Your Name: ");
+            yourName = Console.ReadLine();
+
+            Console.WriteLine(yourName + " is your name");
 
         }
     }
