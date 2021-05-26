@@ -61,12 +61,12 @@ namespace Hello_world_c
             // ****** Code Challenge 1 *********
 
             string yourName;
-            string letterIndex;
+            char letterIndex;
 
             Console.Write("Please Enter Your Name: ");
             yourName = Console.ReadLine();
             Console.Write("Pick a letter to find the index of: ");
-            letterIndex = Console.ReadLine();
+            letterIndex = Console.ReadLine()[0];
 
             int index = yourName.IndexOf(letterIndex);
 
