@@ -7,12 +7,35 @@ namespace Hello_world_c
         static void Main(string[] args)
         {
             WriteSomething();
+            WriteSomethingSpecific("This is something specific to pass into the method");
+            Console.WriteLine(Add(4, 6));
+            Console.WriteLine(Multiplication(2, 6));
+            Console.WriteLine(Division(6, 2));
+        }
+        public static int Add(int one, int two)
+        {
+            return one + two;
+        }
+
+        public static double Division(double one, double two)
+        {
+            return one / two;
+        }
+        public static int Multiplication(int one, int two)
+        {
+            return one * two;
         }
         // <access modifier> <static> <return type> <method name> <parameters>
         public static void WriteSomething()
         {
             Console.WriteLine("I am Called from a method");
         }
+
+        public static void WriteSomethingSpecific(string myText)
+        {
+            Console.WriteLine(myText);
+        }
+
 
     }
 }
