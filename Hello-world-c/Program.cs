@@ -6,39 +6,83 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            WriteSomething();
-            WriteSomethingSpecific("This is something specific to pass into the method");
-            Console.WriteLine(Add(4, 6));
-            Console.WriteLine(Multiplication(2, 6));
-            Console.WriteLine(Division(6, 2));
-        }
-        public static int Add(int one, int two)
-        {
-            return one + two;
-        }
+            Console.Write("Please enter a numer: ");
+            string userInput = Console.ReadLine();
 
-        public static double Division(double one, double two)
-        {
-            return one / two;
+            try
+            {
+            int userInputasInt = int.Parse(userInput);
+            }
+            catch
+            {
+                Console.WriteLine("That is not a number");
+            }
         }
-        public static int Multiplication(int one, int two)
-        {
-            return one * two;
-        }
-        // <access modifier> <static> <return type> <method name> <parameters>
-        public static void WriteSomething()
-        {
-            Console.WriteLine("I am Called from a method");
-        }
-
-        public static void WriteSomethingSpecific(string myText)
-        {
-            Console.WriteLine(myText);
-        }
-
 
     }
 }
+
+// *** Calculator challenge ***
+// ****************************
+//static void Main(string[] args)
+//{
+//    Console.Write("Enter two numbers to add: ");
+//    string inputOne = CalculatorInput();
+//    string inputTwo = CalculatorInput();
+
+//    Console.WriteLine(Calculator(Convert.ToDouble(inputOne), Convert.ToDouble(inputTwo)));
+//}
+
+//public static string CalculatorInput()
+//{
+//    string input = Console.ReadLine();
+//    return input;
+//}
+
+//public static double Calculator(double one, double two)
+//{
+//    return one + two;
+//}
+
+// ******* Methods *******
+//static void Main(string[] args)
+//{
+
+//    // getting input
+//    string input = Console.ReadLine();
+//    Console.WriteLine(input);
+
+
+//    WriteSomething();
+//    WriteSomethingSpecific("This is something specific to pass into the method");
+//    Console.WriteLine(Add(4, 6));
+//    Console.WriteLine(Multiplication(2, 6));
+//    Console.WriteLine(Division(6, 2));
+//}
+//public static int Add(int one, int two)
+//{
+//    return one + two;
+//}
+
+//public static double Division(double one, double two)
+//{
+//    return one / two;
+//}
+//public static int Multiplication(int one, int two)
+//{
+//    return one * two;
+//}
+//// <access modifier> <static> <return type> <method name> <parameters>
+//public static void WriteSomething()
+//{
+//    Console.WriteLine("I am Called from a method");
+//}
+
+//public static void WriteSomethingSpecific(string myText)
+//{
+//    Console.WriteLine(myText);
+//}
+
 
 
 // *** Previous Practice from Main Method ***
