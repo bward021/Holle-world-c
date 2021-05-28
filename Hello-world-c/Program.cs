@@ -6,21 +6,41 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            Console.Write("Please enter a numer: ");
-            string userInput = Console.ReadLine();
+            int num = 5;
+            int num2 = 3;
+            int num3;
 
-            try
-            {
-            int userInputasInt = int.Parse(userInput);
-            }
-            catch
-            {
-                Console.WriteLine("That is not a number");
-            }
+            //Unary Operator
+            num3 = -num;
+            Console.WriteLine("num3 is {0}", num3);
+
         }
 
     }
 }
+
+
+// ***** Try/Catch/Finally Practice
+//Console.Write("Please enter a numer: ");
+//string userInput = Console.ReadLine();
+
+//try
+//{
+//    int userInputasInt = int.Parse(userInput);
+//}
+//catch (FormatException)
+//{
+//    Console.WriteLine("That is not a number");
+//}
+//catch (Exception)
+//{
+//    Console.WriteLine("General Exception");
+//}
+//// this will run everytime after the try and catch are run
+//finally
+//{
+//    Console.WriteLine("This is called anyways");
+//}
 
 // *** Calculator challenge ***
 // ****************************
