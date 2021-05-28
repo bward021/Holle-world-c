@@ -6,11 +6,53 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-          
+            int age = 26;
+
+            switch(age)
+            {
+                case 15: 
+                    Console.WriteLine("To young to party in the club");
+                    break;
+                case 26:
+                    Console.WriteLine("Good to go");
+                    break;
+                default:
+                    Console.WriteLine("How old are you then?");
+                    break;
+
+            }
         }
 
     }
 }
+
+// review of switch statements
+//int age = 26;
+
+//switch (age)
+//{
+//    case 15:
+//        Console.WriteLine("To young to party in the club");
+//        break;
+//    case 26:
+//        Console.WriteLine("Good to go");
+//        break;
+//    default:
+//        Console.WriteLine("How old are you then?");
+//        break;
+
+//}
+
+// ***** registering Challenge *****
+//Console.Write("Username: ");
+//string userName = Console.ReadLine();
+//Console.Write("Password: ");
+//string password = Console.ReadLine();
+
+//if (userName != "" && password != "")
+//{
+//    Console.WriteLine("Thank you for registering with us today!");
+//}
 
 
 // Nested if statements
