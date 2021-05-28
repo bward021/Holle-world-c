@@ -6,36 +6,65 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            Console.Write("What is the temperature like? : ");
-            string temperature = Console.ReadLine();
-            int numTemp;
-            int number;
-
-            if(int.TryParse(temperature, out number))
-            {
-                numTemp = number;
-            }
-
-            if(numTemp < 20)
-            {
-                Console.WriteLine("take a coat");
-            }
-            else if (numTemp == 20)
-            {
-                Console.WriteLine("Pants should be fine");
-            }
-            else if (numTemp > 30) 
-            {
-                Console.WriteLine("It is super hot!!");
-            }
-            else
-            {
-                Console.WriteLine("Shorts are good for today!");
-            }
+          
         }
 
     }
 }
+
+
+// Nested if statements
+//bool isAdmin = false;
+//bool isRegistered = true;
+//string userName = "";
+
+//if (isRegistered)
+//{
+//    Console.WriteLine("Hi there, Registered User");
+//    if (userName != "")
+//    {
+//        Console.WriteLine("Hi there, " + userName);
+//        if (isAdmin == true)
+//        {
+//            Console.WriteLine("Admin");
+//        }
+//    }
+//}
+
+// ***** Try Parse *****
+
+//Console.Write("What is the temperature like? : ");
+//string temperature = Console.ReadLine();
+//int numTemp;
+//int number;
+
+//if (int.TryParse(temperature, out number))
+//{
+//    numTemp = number;
+//}
+//else
+//{
+//    numTemp = 0;
+//    Console.WriteLine("Value entered was of a incorrect type, temp set to 0");
+//}
+
+//if (numTemp < 20)
+//{
+//    Console.WriteLine("take a coat");
+//}
+//else if (numTemp == 20)
+//{
+//    Console.WriteLine("Pants should be fine");
+//}
+//else if (numTemp > 30)
+//{
+//    Console.WriteLine("It is super hot!!");
+//}
+//else
+//{
+//    Console.WriteLine("Shorts are good for today!");
+//}
+
 
 // *** introduction to unary operators. previous knowledge skipped video***
 //int num = 5;
