@@ -6,19 +6,48 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            int num = 5;
-            int num2 = 3;
-            int num3;
+            Console.Write("What is the temperature like? : ");
+            string temperature = Console.ReadLine();
+            int numTemp;
+            int number;
 
-            //Unary Operator
-            num3 = -num;
-            Console.WriteLine("num3 is {0}", num3);
+            if(int.TryParse(temperature, out number))
+            {
+                numTemp = number;
+            }
 
+            if(numTemp < 20)
+            {
+                Console.WriteLine("take a coat");
+            }
+            else if (numTemp == 20)
+            {
+                Console.WriteLine("Pants should be fine");
+            }
+            else if (numTemp > 30) 
+            {
+                Console.WriteLine("It is super hot!!");
+            }
+            else
+            {
+                Console.WriteLine("Shorts are good for today!");
+            }
         }
 
     }
 }
 
+// *** introduction to unary operators. previous knowledge skipped video***
+//int num = 5;
+//int num2 = 3;
+//int num3;
+
+////Unary Operator
+//num3 = -num;
+//Console.WriteLine("num3 is {0}", num3);
+
+//bool isSunny = true;
+//Console.WriteLine("Is it sunny? {0}", !isSunny);
 
 // ***** Try/Catch/Finally Practice
 //Console.Write("Please enter a numer: ");
