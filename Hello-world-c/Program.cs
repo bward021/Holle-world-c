@@ -6,25 +6,44 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            int age = 26;
+            int temperature = -5;
+            string stateOfMatter;
 
-            switch(age)
-            {
-                case 15: 
-                    Console.WriteLine("To young to party in the club");
-                    break;
-                case 26:
-                    Console.WriteLine("Good to go");
-                    break;
-                default:
-                    Console.WriteLine("How old are you then?");
-                    break;
+            stateOfMatter = temperature < 0 ? "Solid" : "Liquid"; 
 
-            }
+            Console.WriteLine("State of the matter is " + stateOfMatter);
         }
 
     }
 }
+
+
+// **** Terinary statement ****
+//int temperature = -5;
+//string stateOfMatter;
+
+//stateOfMatter = temperature < 0 ? "Solid" : "Liquid";
+
+//Console.WriteLine("State of the matter is " + stateOfMatter);
+
+
+
+// switch statements
+//int age = 26;
+
+//switch (age)
+//{
+//    case 15:
+//        Console.WriteLine("To young to party in the club");
+//        break;
+//    case 26:
+//        Console.WriteLine("Good to go");
+//        break;
+//    default:
+//        Console.WriteLine("How old are you then?");
+//        break;
+
+//}
 
 // review of switch statements
 //int age = 26;
