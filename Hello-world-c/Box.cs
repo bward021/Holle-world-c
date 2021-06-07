@@ -6,11 +6,13 @@ namespace Hello_world_c
 {
     class Box
     {
-        //member variables
+        // member variables
         private int length = 3;
         private int height;
-        public int width;
+        // public int width = 3;
         public int volume;
+
+        public int Width { get; set; }
 
         public int Height
         {
@@ -20,7 +22,14 @@ namespace Hello_world_c
             }
             set
             {
-                height = value;
+                if(value < 0)
+                {
+                    height = -value;
+                }
+                else
+                {
+                    height = value;
+                }
             }
         }
 

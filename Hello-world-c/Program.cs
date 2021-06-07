@@ -10,9 +10,10 @@ namespace Hello_world_c
             denis.introduceMyself();
 
             Box box = new Box();
-            box.Height = 4;
+            box.Height = -4;
+            box.Width = 3;
             box.displayInfo();
-            box.SetLength(5);
+            box.SetLength(4);
             Console.WriteLine("Box volume is " + box.GetVolume());
         }
     }
