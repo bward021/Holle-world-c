@@ -6,8 +6,7 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            Human denis = new Human();
-            denis.firstName = "Denis";
+            Human denis = new Human("Brandon", "Ward", "Brown", "26");
             denis.introduceMyself();
         }
 
