@@ -6,10 +6,14 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            Human denis = new Human("Brandon", "Ward", "Brown", "26");
+            Human denis = new Human("Brandon", "Ward", "Brown", 26);
             denis.introduceMyself();
-        }
 
+            Box box = new Box();
+            box.displayInfo();
+            box.setLength(5);
+            Console.WriteLine("Box length is " + box.getLength());
+        }
     }
 }
 
