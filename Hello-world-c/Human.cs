@@ -8,6 +8,14 @@ namespace Hello_world_c
     {
         //  Member variable
         public string firstName;
+        public string lastName;
+
+        public Human(string myFirstName, string lastName)
+        {
+            firstName = myFirstName;
+            this.lastName = lastName;
+        }
+
 
         public void introduceMyself()
         {
