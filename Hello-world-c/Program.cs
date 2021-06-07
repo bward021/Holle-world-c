@@ -6,12 +6,9 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            int temperature = -5;
-            string stateOfMatter;
-
-            stateOfMatter = temperature < 0 ? "Solid" : "Liquid"; 
-
-            Console.WriteLine("State of the matter is " + stateOfMatter);
+            Human denis = new Human();
+            denis.firstName = "Denis";
+            denis.introduceMyself();
         }
 
     }
