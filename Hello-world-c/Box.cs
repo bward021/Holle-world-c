@@ -13,14 +13,19 @@ namespace Hello_world_c
         public int volume;
 
         // Setters and Getters
-        public void setLength(int length)
+        public void SetLength(int length)
         {
             this.length = length;
         }
 
-        public int getLength()
+        public int GetLength()
         {
             return this.length;
+        }
+
+        public int GetVolume()
+        {
+            return this.length * this.height * this.width;
         }
 
         public void displayInfo()

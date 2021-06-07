@@ -11,8 +11,8 @@ namespace Hello_world_c
 
             Box box = new Box();
             box.displayInfo();
-            box.setLength(5);
-            Console.WriteLine("Box length is " + box.getLength());
+            box.SetLength(5);
+            Console.WriteLine("Box volume is " + box.GetVolume());
         }
     }
 }
