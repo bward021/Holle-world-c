@@ -8,14 +8,33 @@ namespace Hello_world_c
     {
         //member variables
         private int length = 3;
-        public int height;
+        private int height;
         public int width;
         public int volume;
+
+        public int Height
+        {
+            get
+            {
+                return height;
+            }
+            set
+            {
+                height = value;
+            }
+        }
 
         // Setters and Getters
         public void SetLength(int length)
         {
-            this.length = length;
+            if (length < 0)
+            {
+                throw new Exception("length should be higher than 0");
+            }
+            else
+            {
+                this.length = length;
+            }
         }
 
         public int GetLength()
