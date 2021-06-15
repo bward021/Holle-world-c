@@ -6,18 +6,37 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            int[] grades = new int[5];
-            grades[0] = 20;
-            grades[1] = 15;
-            grades[2] = 12;
-            grades[3] = 7;
-            grades[4] = 9;
+            string[] friends = { "Nate", "Madi", "Savanah", "Jessica", "Caitlin" };
 
-            Console.WriteLine("grades at index 0 : {0}", grades[0]);
+            foreach (string friend in friends)
+            {
+                Console.WriteLine("Hey there {0}", friend);
+            }
+
 
         }
     }
 }
+
+// ********* For each loops *******
+
+//int[] nums = new int[10];
+
+//for (int i = 0; i < 10; i++)
+//{
+//    nums[i] = i + 10;
+//}
+
+//for (int j = 0; j < 10; j++)
+//{
+//    Console.WriteLine("element at {0} = {1}", j, nums[j]);
+//}
+
+//foreach (int k in nums)
+//{
+//    Console.WriteLine(k);
+//}
+
 
 //static void Main(string[] args)
 //{
