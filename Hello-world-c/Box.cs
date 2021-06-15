@@ -53,12 +53,12 @@ namespace Hello_world_c
 
         public int GetVolume()
         {
-            return this.length * this.height * this.width;
+            return this.length * this.height;
         }
 
         public void displayInfo()
         {
-            Console.WriteLine("Length is {0}, height is {1}, width is {2}, so the volume is {3}",length, height, width, volume = length*height*width);
+            Console.WriteLine("Length is {0}, height is {1}, width is {2}, so the volume is {3}",length, height, volume = length*height);
         }
     }
 }

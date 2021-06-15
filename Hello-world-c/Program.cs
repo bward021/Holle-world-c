@@ -6,18 +6,38 @@ namespace Hello_world_c
     {
         static void Main(string[] args)
         {
-            Human denis = new Human("Brandon", "Ward", "Brown", 26);
-            denis.introduceMyself();
+            int[] grades = new int[5];
+            grades[0] = 20;
+            grades[1] = 15;
+            grades[2] = 12;
+            grades[3] = 7;
+            grades[4] = 9;
 
-            Box box = new Box();
-            box.Height = -4;
-            box.Width = 3;
-            box.displayInfo();
-            box.SetLength(4);
-            Console.WriteLine("Box volume is " + box.GetVolume());
+            Console.WriteLine("grades at index 0 : {0}", grades[0]);
+
         }
     }
 }
+
+//static void Main(string[] args)
+//{
+
+//    Members member1 = new Members();
+//    member1.SayHi();
+
+//}
+
+
+// properties practice ***************
+//Human denis = new Human("Brandon", "Ward", "Brown", 26);
+//denis.introduceMyself();
+
+//Box box = new Box();
+//box.Height = -4;
+//box.Width = 3;
+//box.displayInfo();
+//box.SetLength(4);
+//Console.WriteLine("Box volume is " + box.GetVolume());
 
 
 // **** Terinary statement ****
